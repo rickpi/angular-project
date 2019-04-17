@@ -1,0 +1,7 @@
+<rtz-phone [user]="standard" (zoom)="displayBig($event)"></rtz-phone>
+<rtz-phone [user]="sommelier" (zoom)="displayBig($event)"></rtz-phone>
+<rtz-phone [user]="boucher" (zoom)="displayBig($event)"></rtz-phone>
+
+<div *ngIf="zoomedPhoneNumber" class="phone">
+  {{zoomedPhoneNumber}}
+</div>
